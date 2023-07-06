@@ -55,7 +55,7 @@ var distritos = L.tileLayer.wms("http://localhost:8080/geoserver/webgis_lalibert
 distritos.addTo(map);
 
 var bancos = L.tileLayer.wms("http://localhost:8080/geoserver/webgis_lalibertad/wms?", {
-    layers: "webgis_lalibertad:bancos", 
+    layers: "	webgis_lalibertad:bancos", 
    format: 'image/png',
    transparent: true,
    version: '1.1.1',
@@ -116,7 +116,6 @@ var restaurantes = L.tileLayer.wms("http://localhost:8080/geoserver/webgis_lalib
     attribution: "SENCICO"
   });
 restaurantes.addTo(map);
-
 
 var baseMaps = {                   
   "OSM": basemapOSM,
